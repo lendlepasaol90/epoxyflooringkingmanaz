@@ -1,6 +1,6 @@
 {
  "heroDesert": {
-  "base": "/images/hero/kingman-high-desert-mountain-sunset",
+  "base": "/images/hero/high-desert-mountains-at-sunset",
   "widths": [
    480,
    800,
@@ -251,7 +251,7 @@
   "alt": "Monsoon clouds building over the high desert"
  },
  "desertRoad": {
-  "base": "/images/local/winding-desert-highway-mohave-county",
+  "base": "/images/local/winding-highway-through-desert-hills",
   "widths": [
    480,
    800,

@@ -12,7 +12,7 @@ export const site = {
   geo: { lat: 35.1894, lng: -114.053 },
   mapQuery: 'Kingman, AZ',
   hours: 'Mon–Sat, 7am–6pm',
-  ogImage: '/images/hero/kingman-high-desert-mountain-sunset-1200.webp',
+  ogImage: '/images/hero/high-desert-mountains-at-sunset-1200.webp',
 };
 
 export const services = [
