@@ -1,0 +1,304 @@
+{
+ "heroDesert": {
+  "base": "/images/hero/kingman-high-desert-mountain-sunset",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1331,
+  "alt": "High desert mountains at sunset near Kingman, Arizona"
+ },
+ "flakeTan": {
+  "base": "/images/flake/sandstone-tan-decorative-flake-epoxy",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1467,
+  "alt": "Close-up of a tan, cream and black decorative flake epoxy floor"
+ },
+ "flakeTerracotta": {
+  "base": "/images/flake/terracotta-flake-blend-floor-texture",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1650,
+  "alt": "Terracotta, cream and charcoal flake blend floor texture"
+ },
+ "metalCaramel": {
+  "base": "/images/metallic/caramel-cream-metallic-epoxy-swirl",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1467,
+  "alt": "Caramel and cream metallic epoxy swirl pattern"
+ },
+ "metalRoom": {
+  "base": "/images/metallic/silver-metallic-epoxy-great-room",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1467,
+  "alt": "Silver-gray metallic epoxy floor in an open living space"
+ },
+ "garageClassics": {
+  "base": "/images/garage/classic-cars-on-coated-garage-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 900,
+  "alt": "Classic cars parked on a glossy coated garage floor"
+ },
+ "garageTruck": {
+  "base": "/images/garage/workshop-garage-with-vintage-truck",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1238,
+  "alt": "Large workshop garage with a vintage truck on a light coated floor"
+ },
+ "garageSuv": {
+  "base": "/images/garage/bright-garage-with-suv-coated-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1067,
+  "alt": "SUV parked in a bright garage with a coated concrete floor"
+ },
+ "garageBright": {
+  "base": "/images/garage/empty-garage-ready-for-coating",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1067,
+  "alt": "Empty garage with bare concrete ready for a floor coating"
+ },
+ "motoShop": {
+  "base": "/images/garage/motorcycle-shop-garage-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1067,
+  "alt": "Motorcycle parked in a home shop garage"
+ },
+ "grinder": {
+  "base": "/images/process/diamond-grinding-concrete-surface-prep",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1066,
+  "alt": "Diamond grinder preparing a concrete slab before coating"
+ },
+ "crewMetallic": {
+  "base": "/images/process/installer-spreading-metallic-epoxy",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1469,
+  "alt": "Installer spreading a metallic epoxy coat across a floor"
+ },
+ "rolling": {
+  "base": "/images/process/back-rolling-epoxy-topcoat",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1066,
+  "alt": "Installer back-rolling a fresh epoxy coat"
+ },
+ "spread": {
+  "base": "/images/process/squeegee-spreading-epoxy-coat",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1066,
+  "alt": "Squeegee spreading a self-leveling coat on concrete"
+ },
+ "shopBays": {
+  "base": "/images/commercial/auto-service-bays-coated-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1066,
+  "alt": "Automotive service bays with a durable coated floor"
+ },
+ "factoryLines": {
+  "base": "/images/industrial/factory-floor-with-safety-striping",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1467,
+  "alt": "Factory floor with yellow safety striping on a glossy coating"
+ },
+ "warehouseGloss": {
+  "base": "/images/industrial/warehouse-glossy-gray-epoxy-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1467,
+  "alt": "Warehouse interior with a glossy gray epoxy floor"
+ },
+ "patioCovered": {
+  "base": "/images/patio/covered-patio-concrete-coating",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1467,
+  "alt": "Covered backyard patio with a smooth coated concrete slab"
+ },
+ "openRoom": {
+  "base": "/images/residential/bright-open-room-coated-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1467,
+  "alt": "Bright open room with a seamless light floor"
+ },
+ "monsoon": {
+  "base": "/images/local/monsoon-clouds-over-high-desert",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 874,
+  "alt": "Monsoon clouds building over the high desert"
+ },
+ "desertRoad": {
+  "base": "/images/local/winding-desert-highway-mohave-county",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1467,
+  "alt": "Winding two-lane highway through rocky desert hills"
+ },
+ "rvParked": {
+  "base": "/images/local/rv-parked-at-desert-home",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1066,
+  "alt": "Motorhome parked beside a desert home"
+ },
+ "desertScrub": {
+  "base": "/images/local/high-desert-scrub-and-mountains",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1465,
+  "alt": "High desert scrubland with mountains in the distance"
+ },
+ "kitchen": {
+  "base": "/images/commercial/commercial-kitchen-seamless-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1467,
+  "alt": "Stainless commercial kitchen with a seamless floor"
+ }
+}

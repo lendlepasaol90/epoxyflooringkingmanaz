@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://epoxyflooringkingmanaz.com/sitemap.xml
