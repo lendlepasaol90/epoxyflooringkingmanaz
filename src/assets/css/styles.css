@@ -427,14 +427,13 @@ p { margin: 0 0 1.1em; }
 /* ---------- Motion ---------- */
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.9s var(--ease), transform 0.9s var(--ease); transition-delay: var(--d, 0s); }
 .reveal.is-in { opacity: 1; transform: none; }
-.img-reveal { clip-path: inset(0 0 100% 0 round var(--radius)); transition: clip-path 1.2s var(--ease); }
-.img-reveal.is-in { clip-path: inset(0 0 0 0 round 0); }
-.hero__main.img-reveal.is-in { clip-path: inset(0 0 0 0); }
-.no-js .reveal, .no-js .img-reveal { opacity: 1; transform: none; clip-path: none; }
+.img-reveal > * { clip-path: inset(0 0 100% 0); transition: clip-path 1.2s var(--ease); }
+.img-reveal.is-in > * { clip-path: inset(0 0 0 0); }
+.no-js .reveal, .no-js .img-reveal, .no-js .img-reveal > * { opacity: 1; transform: none; clip-path: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition-duration: 0.01ms !important; }
-  .reveal, .img-reveal { opacity: 1; transform: none; clip-path: none; }
+  .reveal, .img-reveal, .img-reveal > * { opacity: 1; transform: none; clip-path: none; }
 }
 
 /* ---------- Responsive ---------- */
