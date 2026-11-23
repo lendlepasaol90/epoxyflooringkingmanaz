@@ -119,7 +119,7 @@ export function renderService(c) {
     <div class="banner__inner wrap">
       <h2 class="reveal">${esc(c.ctaH2)}</h2>
       <p class="reveal">${md(c.ctaP)}</p>
-      <div class="banner__actions reveal"><a class="btn btn--clay" href="/contact-us/">Request an estimate</a><a class="btn btn--ghost-light" href="tel:${site.phone.tel}">Call ${site.phone.display}</a></div>
+      <div class="banner__actions reveal"><a class="btn btn--clay" href="/estimate/">Request an estimate</a><a class="btn btn--ghost-light" href="tel:${site.phone.tel}">Call ${site.phone.display}</a></div>
     </div>
   </section>
 </main>`;

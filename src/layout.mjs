@@ -95,30 +95,21 @@ export function header(current = '') {
           <button class="drop-toggle" aria-expanded="false" aria-controls="svc-menu" data-drop>Services<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
           <ul class="drop" id="svc-menu">${svcLinks}</ul>
         </li>
-        <li><a href="/about-us/"${is('about')}>About Us</a></li>
-        <li><a href="/service-areas/"${is('areas')}>Service Areas</a></li>
-        <li><a href="/contact-us/"${is('contact')}>Contact</a></li>
+        <li><a href="/about/"${is('about')}>About</a></li>
+        <li><a href="/service-area/"${is('areas')}>Service Area</a></li>
+        <li><a href="/estimate/"${is('contact')}>Contact</a></li>
       </ul>
     </nav>
     <a class="phone-cta" href="tel:${site.phone.tel}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span>${site.phone.display}</span></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="mobile-panel" data-menu><span></span><span></span><span></span><b class="sr">Menu</b></button>
   </div>
-  <div class="quote-bar" data-quotebar>
-    <div class="wrap quote-bar__inner">
-      <button class="quote-bar__toggle" aria-expanded="false" aria-controls="hdr-form-wrap" data-quote-toggle>
-        <span>Free on-site estimate</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
-      </button>
-      <p class="quote-bar__label">Free on-site estimate<em>Tell us about the slab — we reply within one business day.</em></p>
-      <div class="quote-bar__form" id="hdr-form-wrap">${leadForm({ id: 'hdr', variant: 'bar', button: 'Get my quote' })}</div>
-    </div>
-  </div>
   <div class="mobile-panel" id="mobile-panel" data-mobile-panel hidden>
     <ul>
       <li><a href="/">Home</a></li>
       <li><details><summary>Services</summary><ul>${svcLinks}</ul></details></li>
-      <li><a href="/about-us/">About Us</a></li>
-      <li><a href="/service-areas/">Service Areas</a></li>
-      <li><a href="/contact-us/">Contact</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/service-area/">Service Area</a></li>
+      <li><a href="/estimate/">Contact</a></li>
     </ul>
     <a class="btn btn--clay" href="tel:${site.phone.tel}">Call ${site.phone.display}</a>
   </div>
@@ -143,10 +134,10 @@ export function footer() {
     <nav class="footer-col" aria-label="Company">
       <h2>Company</h2>
       <ul>
-        <li><a href="/about-us/">About Us</a></li>
-        <li><a href="/service-areas/">Service Areas</a></li>
-        <li><a href="/contact-us/">Contact</a></li>
-        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/service-area/">Service Area</a></li>
+        <li><a href="/estimate/">Contact</a></li>
+        <li><a href="/privacy/">Privacy Policy</a></li>
       </ul>
       <h2 class="mt">Nearby</h2>
       <p class="footer-areas">${areas.slice(0, 6).map((a) => a.name).join(' · ')}</p>
@@ -158,7 +149,7 @@ export function footer() {
   </div>
   <div class="wrap footer-base">
     <p>© ${year} ${esc(site.name)}. All rights reserved.</p>
-    <p><a href="/privacy-policy/">Privacy</a> · <a href="/sitemap.xml">Sitemap</a></p>
+    <p><a href="/privacy/">Privacy</a> · <a href="/sitemap.xml">Sitemap</a></p>
   </div>
 </footer>
 <a class="float-call" href="tel:${site.phone.tel}" aria-label="Call ${site.phone.display}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></a>
