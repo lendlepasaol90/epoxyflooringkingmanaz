@@ -21,6 +21,8 @@ export function renderAbout() {
   <section class="section">
     <div class="wrap about__grid">
       <div class="prose">
+        <p class="reveal">${esc(site.description)}</p>
+        <p class="reveal">${esc(site.name)} is owned by <strong>${esc(site.owner)}</strong>. As an epoxy flooring company in Kingman, AZ, we are a local crew that answers its own phone and stands behind its own floors.</p>
         <h2 class="reveal">How we think about floors</h2>
         <p class="reveal">Every coated floor is a stack of decisions. How deep to grind. Whether a crack is stable or still moving. Which primer to use on a slab that tested a little damp. How thick to build the base so it survives a floor jack. None of those decisions are visible once the topcoat goes on, which is exactly why they are easy to skip and why we take our time with them.</p>
         <p class="reveal">Our customers range from homeowners with a single-car garage to shop owners and facility managers with thousands of square feet. The scale changes, but the approach does not. We look at the concrete first, explain what we see, and recommend a system that fits the way the space is used — not just the system that is easiest to sell.</p>
@@ -49,7 +51,7 @@ export function renderAbout() {
     <div class="banner__inner wrap"><h2 class="reveal">Let’s look at your floor together.</h2><p class="reveal">Free estimates in Kingman and nearby Mohave County communities.</p><div class="banner__actions reveal"><a class="btn btn--clay" href="/contact-us/">Request an estimate</a></div></div>
   </section>
 </main>`;
-  return head({ title: 'About Us | Epoxy Flooring Kingman AZ', description: 'Meet the Kingman-area concrete coating crew behind Epoxy Flooring Kingman AZ — diamond-ground prep, honest recommendations and coatings chosen for high-desert conditions.', canonical: '/about-us/', schema: [businessSchema(), crumbSchema(trail)] }) + header('about') + body + footer();
+  return head({ title: 'About Us | Kingman Epoxy Flooring', description: 'Meet the Kingman-area concrete coating crew behind Kingman Epoxy Flooring — diamond-ground prep, honest recommendations and coatings chosen for high-desert conditions.', canonical: '/about-us/', schema: [businessSchema(), crumbSchema(trail)] }) + header('about') + body + footer();
 }
 
 // ---------------- SERVICE AREAS ----------------
@@ -87,7 +89,7 @@ export function renderAreas() {
     </div>
   </section>
 </main>`;
-  return head({ title: 'Service Areas | Epoxy Flooring Kingman AZ', description: 'Epoxy and concrete coating services in Kingman, Butler, Golden Valley, Valle Vista, the Hualapai Mountain area, Chloride, Dolan Springs and nearby communities.', canonical: '/service-areas/', schema: [businessSchema(), crumbSchema(trail)] }) + header('areas') + body + footer();
+  return head({ title: 'Service Areas | Kingman Epoxy Flooring', description: 'Epoxy and concrete coating services in Kingman, Butler, Golden Valley, Valle Vista, the Hualapai Mountain area, Chloride, Dolan Springs and nearby communities.', canonical: '/service-areas/', schema: [businessSchema(), crumbSchema(trail)] }) + header('areas') + body + footer();
 }
 
 // ---------------- CONTACT ----------------
@@ -102,7 +104,9 @@ export function renderContact() {
         <div class="info-card reveal">
           <h2>Talk to us</h2>
           <p class="info-card__big"><a href="tel:${site.phone.tel}">${site.phone.display}</a></p>
-          <p>${site.hours}</p>
+          <p><a href="mailto:${site.email}">${site.email}</a></p>
+          <p><a href="https://www.google.com/maps/search/?api=1&amp;query=${encodeURIComponent(site.mapQuery)}" target="_blank" rel="noopener">${esc(site.addressLine)}</a></p>
+          <dl class="hours">${site.hoursTable.map(([d, h]) => `<div><dt>${d}</dt><dd>${h}</dd></div>`).join('')}</dl>
           <p>Serving Kingman and nearby Mohave County communities.</p>
         </div>
         <div class="info-card reveal">
@@ -122,7 +126,7 @@ export function renderContact() {
     </div>
   </section>
 </main>`;
-  return head({ title: 'Contact Us | Free Estimate | Epoxy Flooring Kingman AZ', description: 'Request a free on-site estimate for garage, residential, patio, commercial or warehouse floor coatings in Kingman, AZ. We respond within one business day.', canonical: '/contact-us/', schema: [businessSchema(), crumbSchema(trail)] }) + header('contact') + body + footer();
+  return head({ title: 'Contact Us | Free Estimate | Kingman Epoxy Flooring', description: 'Request a free on-site estimate for garage, residential, patio, commercial or warehouse floor coatings in Kingman, AZ. We respond within one business day.', canonical: '/contact-us/', schema: [businessSchema(), crumbSchema(trail)] }) + header('contact') + body + footer();
 }
 
 // ---------------- PRIVACY ----------------
@@ -145,7 +149,7 @@ export function renderPrivacy() {
     </div>
   </section>
 </main>`;
-  return head({ title: 'Privacy Policy | Epoxy Flooring Kingman AZ', description: 'How Epoxy Flooring Kingman AZ collects and uses information submitted through this website.', canonical: '/privacy-policy/', schema: [] }) + header('privacy') + body + footer();
+  return head({ title: 'Privacy Policy | Kingman Epoxy Flooring', description: 'How Kingman Epoxy Flooring collects and uses information submitted through this website.', canonical: '/privacy-policy/', schema: [] }) + header('privacy') + body + footer();
 }
 
 // ---------------- 404 ----------------
@@ -164,5 +168,5 @@ export function render404() {
     </div>
   </section>
 </main>`;
-  return head({ title: 'Page not found | Epoxy Flooring Kingman AZ', description: 'The requested page could not be found.', canonical: '/404.html', schema: [] }).replace('index, follow', 'noindex') + header('') + body + footer();
+  return head({ title: 'Page not found | Kingman Epoxy Flooring', description: 'The requested page could not be found.', canonical: '/404.html', schema: [] }).replace('index, follow', 'noindex') + header('') + body + footer();
 }

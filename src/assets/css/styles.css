@@ -1,5 +1,5 @@
 /* =========================================================
-   Epoxy Flooring Kingman AZ — "Sandstone & Charcoal"
+   Kingman Epoxy Flooring — "Sandstone & Charcoal"
    ========================================================= */
 :root {
   --ivory: #fbf7f0;
@@ -495,3 +495,11 @@ p { margin: 0 0 1.1em; }
   .svc-pro { padding: 28px !important; }
   .hero__actions .btn, .banner__actions .btn { width: 100%; }
 }
+
+/* Business address, email and hours */
+.footer-nap { font-style: normal; margin-top: .5rem; line-height: 1.55; }
+.footer-nap a { color: inherit; }
+.hours { margin: .75rem 0; display: grid; gap: .35rem; }
+.hours div { display: flex; justify-content: space-between; gap: 1rem; border-bottom: 1px solid rgba(127,127,127,.25); padding-bottom: .35rem; }
+.hours dt { font-weight: 600; }
+.hours dd { margin: 0; }

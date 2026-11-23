@@ -1,4 +1,4 @@
-/* Epoxy Flooring Kingman AZ — site interactions */
+/* Kingman Epoxy Flooring — site interactions */
 (function () {
   'use strict';
   var doc = document.documentElement;

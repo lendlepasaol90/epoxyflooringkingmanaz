@@ -8,7 +8,7 @@
  *   RESEND_API_KEY + LEAD_TO_EMAIL (+ optional LEAD_FROM_EMAIL)   email delivery through Resend
  * Every submission is also written to the Worker logs.
  */
-const SITE = 'Epoxy Flooring Kingman AZ';
+const SITE = 'Kingman Epoxy Flooring';
 const json = (body, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
 

@@ -1,17 +1,23 @@
-// Site-wide configuration for Epoxy Flooring Kingman AZ.
-// PHONE: replace the placeholder below once the business line is live.
+// Site-wide configuration for Kingman Epoxy Flooring.
 export const site = {
-  name: 'Epoxy Flooring Kingman AZ',
-  shortName: 'Epoxy Flooring Kingman',
+  name: 'Kingman Epoxy Flooring',
+  shortName: 'Kingman Epoxy Flooring',
+  owner: 'Trisha Goetz',
+  category: 'Flooring Contractor',
+  description: "Make your concrete floors one of the best features of your property with Kingman Epoxy Flooring. Serving Kingman, AZ, and surrounding Mohave County communities, we help homeowners and business owners replace the look of bare, stained, and aging concrete with attractive, long-lasting floor coatings. From residential garages and backyard patios to automotive shops, warehouses, and retail spaces, we offer epoxy flooring solutions tailored to how each space is used. Explore decorative flake finishes, metallic epoxy designs, solid-color coatings, and polyaspartic flooring options. Our goal is to deliver floors that look exceptional, are easier to maintain, and stand up to everyday demands. Contact Kingman Epoxy Flooring to discuss your project and request a free estimate!",
+  email: 'info@epoxyflooringkingmanaz.com',
+  address: { street: '2534 Hualapai Mountain Rd #163', city: 'Kingman', state: 'AZ', zip: '86401' },
+  addressLine: '2534 Hualapai Mountain Rd #163, Kingman, AZ 86401',
   domain: 'https://epoxyflooringkingmanaz.com',
   city: 'Kingman',
   state: 'AZ',
   stateFull: 'Arizona',
   county: 'Mohave County',
-  phone: { display: '(928) 000-0000', tel: '+19280000000', placeholder: true },
-  geo: { lat: 35.1894, lng: -114.053 },
-  mapQuery: 'Kingman, AZ',
-  hours: 'Mon–Sat, 7am–6pm',
+  phone: { display: '(928) 754-8748', tel: '+19287548748', placeholder: false },
+  geo: { lat: 35.1830, lng: -114.0360 },
+  mapQuery: 'Kingman Epoxy Flooring, 2534 Hualapai Mountain Rd #163, Kingman, AZ 86401',
+  hours: 'Mon – Sat: 7:00 AM – 6:00 PM · Sun: Closed',
+  hoursTable: [['Monday – Saturday', '7:00 AM – 6:00 PM'], ['Sunday', 'Closed']],
   ogImage: '/images/hero/high-desert-mountains-at-sunset-1200.webp',
 };
 

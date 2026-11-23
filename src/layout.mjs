@@ -126,7 +126,7 @@ export function header(current = '') {
 }
 
 export function footer() {
-  const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(site.mapQuery)}&z=11&output=embed`;
+  const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(site.mapQuery)}&z=13&output=embed`;
   return `<footer class="site-footer">
   <div class="strata" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
   <div class="wrap footer-grid">
@@ -134,6 +134,8 @@ export function footer() {
       <a class="logo logo--footer" href="/"><span class="logo__mark" aria-hidden="true"></span><span class="logo__text">Epoxy Flooring<small>Kingman, Arizona</small></span></a>
       <p>Concrete coatings for garages, homes, shops and commercial floors across Kingman and the surrounding Mohave County communities.</p>
       <a class="footer-phone" href="tel:${site.phone.tel}">${site.phone.display}</a>
+      <p class="footer-nap"><a href="mailto:${site.email}">${site.email}</a></p>
+      <address class="footer-nap">${esc(site.address.street)}<br>${esc(site.address.city)}, ${site.address.state} ${site.address.zip}</address>
       <p class="footer-hours">${site.hours}</p>
     </div>
     <nav class="footer-col" aria-label="Services">
@@ -153,7 +155,7 @@ export function footer() {
     </nav>
     <div class="footer-map">
       <h2>Serving the Kingman area</h2>
-      <div class="map-frame"><iframe title="Map of Kingman, Arizona" src="${mapSrc}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      <div class="map-frame"><iframe title="Map of ${esc(site.name)}, ${esc(site.addressLine)}" src="${mapSrc}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
     </div>
   </div>
   <div class="wrap footer-base">
@@ -163,7 +165,7 @@ export function footer() {
 </footer>
 <a class="float-call" href="tel:${site.phone.tel}" aria-label="Call ${site.phone.display}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></a>
 <script src="/assets/js/main.js?v=1" defer></script>
-<script src="/assets/js/formsubmit.js" data-site="Epoxy Flooring Kingman AZ" defer></script>
+<script src="/assets/js/formsubmit.js" data-site="${esc(site.name)}" defer></script>
 </body>
 </html>`;
 }
@@ -179,9 +181,12 @@ export function businessSchema() {
     name: site.name,
     url: site.domain + '/',
     image: site.domain + site.ogImage,
-    description: 'Epoxy, polyaspartic and polyurea floor coatings for garages, homes, patios, commercial spaces and warehouses in Kingman, Arizona and nearby Mohave County communities.',
+    description: site.description,
+    email: site.email,
+    founder: { '@type': 'Person', name: site.owner },
+    openingHoursSpecification: [{ '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '07:00', closes: '18:00' }],
     areaServed: areas.map((a) => ({ '@type': 'Place', name: `${a.name}, AZ` })),
-    address: { '@type': 'PostalAddress', addressLocality: site.city, addressRegion: site.state, addressCountry: 'US' },
+    address: { '@type': 'PostalAddress', streetAddress: site.address.street, postalCode: site.address.zip, addressLocality: site.city, addressRegion: site.state, addressCountry: 'US' },
     geo: { '@type': 'GeoCoordinates', latitude: site.geo.lat, longitude: site.geo.lng },
     priceRange: '$$',
     makesOffer: services.map((sv) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: sv.name, url: `${site.domain}/${sv.slug}/` } })),

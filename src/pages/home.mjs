@@ -13,8 +13,8 @@ const faqs = [
 ];
 
 export function renderHome() {
-  const title = 'Epoxy Flooring Kingman AZ | Garage, Home & Commercial Coatings';
-  const description = 'Epoxy, flake, metallic, polyaspartic and polyurea floor coatings in Kingman, AZ. Ground-and-sealed garage floors, patios, shops and commercial spaces. Free estimates.';
+  const title = 'Kingman Epoxy Flooring | Epoxy Flooring Contractor in Kingman, AZ';
+  const description = 'Kingman Epoxy Flooring: epoxy flooring company in Kingman, AZ for garage, flake, metallic and commercial floors. Free estimates. Call (928) 754-8748.';
   const svcRows = services
     .map(
       (s, i) => `<li class="svc-row reveal">
