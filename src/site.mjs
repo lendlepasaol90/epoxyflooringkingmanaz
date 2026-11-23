@@ -16,15 +16,14 @@ export const site = {
 };
 
 export const services = [
-  { slug: 'garage-floor-coatings', name: 'Garage Floor Coatings', nav: 'Garage Floor Coatings', blurb: 'Full-broadcast flake and solid systems for daily drivers, shop work and everything parked in between.', img: 'garageClassics' },
-  { slug: 'residential-epoxy-flooring', name: 'Residential Epoxy Flooring', nav: 'Residential Epoxy', blurb: 'Seamless coatings for living areas, laundry rooms, casitas and converted spaces inside the home.', img: 'openRoom' },
-  { slug: 'decorative-flake-flooring', name: 'Decorative Flake Flooring', nav: 'Decorative Flake', blurb: 'Vinyl chip blends that hide dust, add grip and come in palettes that suit desert homes.', img: 'flakeTan' },
-  { slug: 'metallic-epoxy-flooring', name: 'Metallic Epoxy Flooring', nav: 'Metallic Epoxy', blurb: 'Hand-worked pearlescent pigments that move like polished stone or poured copper.', img: 'metalCaramel' },
-  { slug: 'polyaspartic-floor-coatings', name: 'Polyaspartic Floor Coatings', nav: 'Polyaspartic Coatings', blurb: 'Fast-cure, UV-stable topcoats that hold their color in sunlit garages and doorways.', img: 'garageSuv' },
-  { slug: 'polyurea-floor-coatings', name: 'Polyurea Floor Coatings', nav: 'Polyurea Coatings', blurb: 'Flexible, high-elongation base coats for slabs that move with big temperature swings.', img: 'motoShop' },
-  { slug: 'patio-concrete-coatings', name: 'Patio & Concrete Coatings', nav: 'Patio & Concrete', blurb: 'Textured, sun-tolerant coatings for patios, walkways and outdoor living slabs.', img: 'patioCovered' },
-  { slug: 'commercial-epoxy-flooring', name: 'Commercial Epoxy Flooring', nav: 'Commercial Epoxy', blurb: 'Durable, cleanable floors for service bays, kitchens, showrooms and offices.', img: 'shopBays' },
-  { slug: 'warehouse-floor-coatings', name: 'Warehouse Floor Coatings', nav: 'Warehouse Coatings', blurb: 'Forklift-rated systems, striping and dust-proofing for distribution and storage space.', img: 'warehouseGloss' },
+  { slug: 'garage-coatings', name: 'Garage Floor Coatings', nav: 'Garage Floor Coatings', blurb: 'Full-broadcast flake and solid systems for daily drivers, shop work and everything parked in between.', img: 'garageClassics' },
+  { slug: 'residential-floor-coatings', name: 'Residential Epoxy Flooring', nav: 'Residential Epoxy', blurb: 'Seamless coatings for living areas, laundry rooms, casitas and converted spaces inside the home.', img: 'openRoom' },
+  { slug: 'flake-epoxy', name: 'Decorative Flake Flooring', nav: 'Decorative Flake', blurb: 'Vinyl chip blends that hide dust, add grip and come in palettes that suit desert homes.', img: 'flakeTan' },
+  { slug: 'polyaspartic', name: 'Polyaspartic Floor Coatings', nav: 'Polyaspartic Coatings', blurb: 'Fast-cure, UV-stable topcoats that hold their color in sunlit garages and doorways.', img: 'garageSuv' },
+  { slug: 'polyurea', name: 'Polyurea Floor Coatings', nav: 'Polyurea Coatings', blurb: 'Flexible, high-elongation base coats for slabs that move with big temperature swings.', img: 'motoShop' },
+  { slug: 'patio-coatings', name: 'Patio & Concrete Coatings', nav: 'Patio & Concrete', blurb: 'Textured, sun-tolerant coatings for patios, walkways and outdoor living slabs.', img: 'patioCovered' },
+  { slug: 'shop-and-commercial-floors', name: 'Commercial Epoxy Flooring', nav: 'Commercial Epoxy', blurb: 'Durable, cleanable floors for service bays, kitchens, showrooms and offices.', img: 'shopBays' },
+  { slug: 'warehouse-floors', name: 'Warehouse Floor Coatings', nav: 'Warehouse Coatings', blurb: 'Forklift-rated systems, striping and dust-proofing for distribution and storage space.', img: 'warehouseGloss' },
 ];
 
 export const areas = [

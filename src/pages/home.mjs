@@ -70,7 +70,7 @@ export function renderHome() {
       <div class="intro__body reveal">
         <p>Kingman sits a little over 3,300 feet up, which gives us a climate that is harder on concrete than most people expect. Garages bake through the summer, then drop near freezing on winter nights. Slabs expand and contract with every swing. Dust works into the pores. Hot tires come off I-40 and sit on the same patch of floor every evening. A thin roll-on paint simply does not hold up to that for long.</p>
         <p>Our work starts with the slab itself. We grind the surface with diamond tooling, fill cracks and pitted areas, check for moisture and old sealers, and only then build a coating system matched to the room. Sometimes that means a classic epoxy base with a decorative flake broadcast. Sometimes it is a polyaspartic topcoat for UV resistance at the garage door line, or a flexible polyurea base for a detached shop that sees big temperature swings.</p>
-        <p>Whatever the system, the goal is the same: a floor that is easier to clean, harder to stain, and still bonded tight years from now. If you want to see what that looks like in practice, start with our <a href="/garage-floor-coatings/">garage floor coatings</a> or browse the full list of services below.</p>
+        <p>Whatever the system, the goal is the same: a floor that is easier to clean, harder to stain, and still bonded tight years from now. If you want to see what that looks like in practice, start with our <a href="/garage-coatings/">garage floor coatings</a> or browse the full list of services below.</p>
       </div>
     </div>
   </section>
@@ -80,7 +80,7 @@ export function renderHome() {
     <div class="wrap">
       <div class="section-head reveal">
         <p class="eyebrow">What we install</p>
-        <h2>Nine coating systems, one standard of prep.</h2>
+        <h2>Eight coating systems, one standard of prep.</h2>
         <p>Every service below starts with mechanical surface preparation. What changes is the chemistry, the texture and the finish on top.</p>
       </div>
       <ol class="svc-list">${svcRows}</ol>
@@ -127,7 +127,7 @@ export function renderHome() {
           <p>A full-broadcast flake system is our most requested garage floor for good reason. The flakes hide dust and small debris between cleanings, the texture gives your shoes something to grip, and a clear polyaspartic topcoat keeps the colors from fading where afternoon sun reaches through the open door. For shops with jacks and rolling toolboxes, we can build the system thicker and add more aggregate to the top.</p>
           <p>We also handle the details that make a garage feel finished: coating the stem walls a few inches up, cleaning up the expansion joints, and feathering the transition at the driveway edge so it does not catch.</p>
         </div>
-        <a class="link-arrow reveal" href="/garage-floor-coatings/">How our garage systems are built</a>
+        <a class="link-arrow reveal" href="/garage-coatings/">How our garage systems are built</a>
       </div>
       <div class="feature__media">
         <figure class="feature__big img-reveal">${img('garageTruck', { sizes: '(max-width: 900px) 92vw, 48vw' })}</figure>
@@ -151,19 +151,19 @@ export function renderHome() {
           <figure class="img-reveal">${img('openRoom', { sizes: '(max-width: 900px) 92vw, 30vw' })}</figure>
           <h3>Residential epoxy flooring</h3>
           <p>A coated interior floor has no grout lines to scrub and nothing to trap pet hair. We can keep it simple with a solid color and satin finish, or add subtle flake for texture. Interior work uses low-odor products where possible, and we plan the schedule around how you live in the house.</p>
-          <a class="link-arrow" href="/residential-epoxy-flooring/">Residential floors</a>
+          <a class="link-arrow" href="/residential-floor-coatings/">Residential floors</a>
         </article>
         <article class="duo__card reveal">
           <figure class="img-reveal">${img('flakeTerracotta', { sizes: '(max-width: 900px) 92vw, 30vw' })}</figure>
           <h3>Decorative flake flooring</h3>
           <p>Flake blends range from tight, granite-like mixes to bold chips in desert reds and creams. Coverage can be partial for a lighter speckle or full broadcast for maximum texture and hide. We bring physical samples so you can see them in your own light.</p>
-          <a class="link-arrow" href="/decorative-flake-flooring/">Flake options</a>
+          <a class="link-arrow" href="/flake-epoxy/">Flake options</a>
         </article>
         <article class="duo__card reveal">
           <figure class="img-reveal">${img('metalCaramel', { sizes: '(max-width: 900px) 92vw, 30vw' })}</figure>
           <h3>Metallic epoxy flooring</h3>
           <p>Metallic floors are worked by hand while the resin is wet, so no two look alike. Caramel and bronze tones suit the desert palette well, while silver and charcoal read more modern. They are best suited to interiors and showrooms, where direct sun is limited.</p>
-          <a class="link-arrow" href="/metallic-epoxy-flooring/">Metallic finishes</a>
+          Metallic finishes
         </article>
       </div>
     </div>
@@ -177,8 +177,8 @@ export function renderHome() {
         <h2 class="reveal">Polyaspartic, polyurea and outdoor coatings.</h2>
         <div class="reveal">
           <p>“Epoxy” has become shorthand for any coated concrete floor, but epoxy is only one ingredient. It bonds and builds thickness beautifully, yet it is not the best choice for every layer. Where sunlight, speed or flexibility matter, other chemistries do the job better.</p>
-          <p><a href="/polyaspartic-floor-coatings/">Polyaspartic coatings</a> cure in hours rather than days and stay clear under UV, which makes them our go-to topcoat for garages and doorways. <a href="/polyurea-floor-coatings/">Polyurea coatings</a> stretch and recover, so they suit slabs that move — think uninsulated metal shops or older garages with a few working cracks.</p>
-          <p>Outside, a <a href="/patio-concrete-coatings/">patio and concrete coating</a> has to handle direct sun, pool water and bare feet. We use textured, light-reflective systems that stay comfortable and slip-resistant, and we steer people away from slick, glossy finishes on anything that gets wet.</p>
+          <p><a href="/polyaspartic/">Polyaspartic coatings</a> cure in hours rather than days and stay clear under UV, which makes them our go-to topcoat for garages and doorways. <a href="/polyurea/">Polyurea coatings</a> stretch and recover, so they suit slabs that move — think uninsulated metal shops or older garages with a few working cracks.</p>
+          <p>Outside, a <a href="/patio-coatings/">patio and concrete coating</a> has to handle direct sun, pool water and bare feet. We use textured, light-reflective systems that stay comfortable and slip-resistant, and we steer people away from slick, glossy finishes on anything that gets wet.</p>
         </div>
       </div>
       <figure class="beyond__media img-reveal">${img('patioCovered', { sizes: '(max-width: 900px) 92vw, 42vw' })}</figure>
@@ -193,7 +193,7 @@ export function renderHome() {
       <h2 class="reveal">Floors that keep a business running.</h2>
       <div class="reveal">
         <p>Kingman’s position on the I-40 and US 93 corridor brings a steady mix of trucking, distribution, automotive and light manufacturing work. Those floors deal with forklifts, pallet jacks, hydraulic fluid, and constant foot traffic. A coating has to resist chemicals, hold striping, and come back clean with a mop or scrubber.</p>
-        <p>For <a href="/commercial-epoxy-flooring/">commercial epoxy flooring</a>, we build systems for service bays, restaurant kitchens, retail floors, clinics and offices, often working nights or weekends so you stay open. <a href="/warehouse-floor-coatings/">Warehouse floor coatings</a> focus on abrasion resistance, dust-proofing and clearly marked aisles, safety zones and loading areas.</p>
+        <p>For <a href="/shop-and-commercial-floors/">commercial epoxy flooring</a>, we build systems for service bays, restaurant kitchens, retail floors, clinics and offices, often working nights or weekends so you stay open. <a href="/warehouse-floors/">Warehouse floor coatings</a> focus on abrasion resistance, dust-proofing and clearly marked aisles, safety zones and loading areas.</p>
         <p>Larger spaces are usually done in phases. We map the floor with you before we start so racking, equipment and traffic can move around the work.</p>
       </div>
       <dl class="stat-row reveal">
@@ -295,10 +295,10 @@ export function renderHome() {
   <section class="areas section section--sand">
     <div class="wrap areas__grid">
       <div>
-        <p class="eyebrow reveal">Service areas</p>
+        <p class="eyebrow reveal">Service Area</p>
         <h2 class="reveal">Kingman and the communities around it.</h2>
         <p class="reveal">We are based in the Kingman area and work throughout this part of Mohave County. Distance rarely changes how we work, but it can affect scheduling on larger jobs, so let us know where the project is when you reach out.</p>
-        <a class="link-arrow reveal" href="/service-areas/">See all service areas</a>
+        <a class="link-arrow reveal" href="/service-area/">See all service areas</a>
       </div>
       <ul class="area-chips">${areas.map((a) => `<li class="reveal"><strong>${a.name}</strong><span>${esc(a.note)}</span></li>`).join('')}</ul>
     </div>
@@ -310,7 +310,7 @@ export function renderHome() {
       <div class="faq__intro">
         <p class="eyebrow reveal">Questions we hear often</p>
         <h2 class="reveal">Epoxy flooring FAQ</h2>
-        <p class="reveal">Straight answers about timing, durability and what to expect. Have something else on your mind? <a href="/contact-us/">Ask us directly.</a></p>
+        <p class="reveal">Straight answers about timing, durability and what to expect. Have something else on your mind? <a href="/estimate/">Ask us directly.</a></p>
       </div>
       <div class="accordion">${faqs.map((f, i) => `<details class="acc reveal"${i === 0 ? ' open' : ''}><summary>${esc(f.q)}</summary><div class="acc__body"><p>${md(f.a)}</p></div></details>`).join('')}</div>
     </div>

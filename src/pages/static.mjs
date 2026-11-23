@@ -15,9 +15,9 @@ function pageHero({ eyebrow, h1, lead, image, trail }) {
 
 // ---------------- ABOUT ----------------
 export function renderAbout() {
-  const trail = [{ name: 'Home', url: '/' }, { name: 'About Us', url: '/about-us/' }];
+  const trail = [{ name: 'Home', url: '/' }, { name: 'About', url: '/about/' }];
   const body = `<main id="main">
-  ${pageHero({ eyebrow: 'About us', h1: 'Concrete coating, done the slow way where it counts.', lead: 'We are a Kingman-area flooring crew focused on one thing: coated concrete floors that stay bonded and look right for years.', image: 'grinder', trail })}
+  ${pageHero({ eyebrow: 'About', h1: 'Concrete coating, done the slow way where it counts.', lead: 'We are a Kingman-area flooring crew focused on one thing: coated concrete floors that stay bonded and look right for years.', image: 'grinder', trail })}
   <section class="section">
     <div class="wrap about__grid">
       <div class="prose">
@@ -46,10 +46,10 @@ export function renderAbout() {
     </div>
   </section>
   <section class="banner banner--compact" style="--banner-bg:url('${bg('heroDesert', 2200)}')">
-    <div class="banner__inner wrap"><h2 class="reveal">Let’s look at your floor together.</h2><p class="reveal">Free estimates in Kingman and nearby Mohave County communities.</p><div class="banner__actions reveal"><a class="btn btn--clay" href="/contact-us/">Request an estimate</a></div></div>
+    <div class="banner__inner wrap"><h2 class="reveal">Let’s look at your floor together.</h2><p class="reveal">Free estimates in Kingman and nearby Mohave County communities.</p><div class="banner__actions reveal"><a class="btn btn--clay" href="/estimate/">Request an estimate</a></div></div>
   </section>
 </main>`;
-  return head({ title: 'About Us | Epoxy Flooring Kingman AZ', description: 'Meet the Kingman-area concrete coating crew behind Epoxy Flooring Kingman AZ — diamond-ground prep, honest recommendations and coatings chosen for high-desert conditions.', canonical: '/about-us/', schema: [businessSchema(), crumbSchema(trail)] }) + header('about') + body + footer();
+  return head({ title: 'About | Epoxy Flooring Kingman AZ', description: 'Meet the Kingman-area concrete coating crew behind Epoxy Flooring Kingman AZ — diamond-ground prep, honest recommendations and coatings chosen for high-desert conditions.', canonical: '/about/', schema: [businessSchema(), crumbSchema(trail)] }) + header('about') + body + footer();
 }
 
 // ---------------- SERVICE AREAS ----------------
@@ -65,9 +65,9 @@ const areaCopy = {
 };
 
 export function renderAreas() {
-  const trail = [{ name: 'Home', url: '/' }, { name: 'Service Areas', url: '/service-areas/' }];
+  const trail = [{ name: 'Home', url: '/' }, { name: 'Service Area', url: '/service-area/' }];
   const body = `<main id="main">
-  ${pageHero({ eyebrow: 'Service areas', h1: 'Coating floors across Kingman and northern Mohave County.', lead: 'Our crews work throughout the Kingman area and surrounding communities. If you are not sure whether we reach your property, just ask.', image: 'desertScrub', trail })}
+  ${pageHero({ eyebrow: 'Service Area', h1: 'Coating floors across Kingman and northern Mohave County.', lead: 'Our crews work throughout the Kingman area and surrounding communities. If you are not sure whether we reach your property, just ask.', image: 'desertScrub', trail })}
   <section class="section">
     <div class="wrap">
       <div class="area-cards">
@@ -76,23 +76,23 @@ export function renderAreas() {
       <div class="prose areas__more reveal">
         <h2>Outside these communities?</h2>
         <p>We occasionally take on projects farther afield, especially larger garages, shops and commercial floors where the travel is worthwhile. Send us the location and a short description of the project. We will tell you plainly whether we can schedule it and what that might look like.</p>
-        <p>Every service we offer is available throughout our area, including <a href="/garage-floor-coatings/">garage floor coatings</a>, <a href="/decorative-flake-flooring/">decorative flake floors</a>, <a href="/patio-concrete-coatings/">patio coatings</a> and <a href="/commercial-epoxy-flooring/">commercial flooring</a>.</p>
+        <p>Every service we offer is available throughout our area, including <a href="/garage-coatings/">garage floor coatings</a>, <a href="/flake-epoxy/">decorative flake floors</a>, <a href="/patio-coatings/">patio coatings</a> and <a href="/shop-and-commercial-floors/">commercial flooring</a>.</p>
       </div>
     </div>
   </section>
   <section class="section section--sand">
     <div class="wrap map-band">
-      <div class="map-band__copy"><h2 class="reveal">Centered on Kingman</h2><p class="reveal">We schedule projects across the surrounding valleys and foothills. Use the map to get a sense of the area we cover.</p><a class="btn btn--clay reveal" href="/contact-us/">Check availability</a></div>
+      <div class="map-band__copy"><h2 class="reveal">Centered on Kingman</h2><p class="reveal">We schedule projects across the surrounding valleys and foothills. Use the map to get a sense of the area we cover.</p><a class="btn btn--clay reveal" href="/estimate/">Check availability</a></div>
       <div class="map-frame map-frame--lg"><iframe title="Map of the Kingman, Arizona service area" src="https://www.google.com/maps?q=${encodeURIComponent('Kingman, AZ')}&z=10&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     </div>
   </section>
 </main>`;
-  return head({ title: 'Service Areas | Epoxy Flooring Kingman AZ', description: 'Epoxy and concrete coating services in Kingman, Butler, Golden Valley, Valle Vista, the Hualapai Mountain area, Chloride, Dolan Springs and nearby communities.', canonical: '/service-areas/', schema: [businessSchema(), crumbSchema(trail)] }) + header('areas') + body + footer();
+  return head({ title: 'Service Area | Epoxy Flooring Kingman AZ', description: 'Epoxy and concrete coating services in Kingman, Butler, Golden Valley, Valle Vista, the Hualapai Mountain area, Chloride, Dolan Springs and nearby communities.', canonical: '/service-area/', schema: [businessSchema(), crumbSchema(trail)] }) + header('areas') + body + footer();
 }
 
 // ---------------- CONTACT ----------------
 export function renderContact() {
-  const trail = [{ name: 'Home', url: '/' }, { name: 'Contact', url: '/contact-us/' }];
+  const trail = [{ name: 'Home', url: '/' }, { name: 'Contact', url: '/estimate/' }];
   const body = `<main id="main">
   ${pageHero({ eyebrow: 'Contact', h1: 'Request a free floor estimate.', lead: 'Tell us a bit about the space and we will be in touch within one business day to set up a visit.', image: 'garageBright', trail })}
   <section class="section">
@@ -122,12 +122,12 @@ export function renderContact() {
     </div>
   </section>
 </main>`;
-  return head({ title: 'Contact Us | Free Estimate | Epoxy Flooring Kingman AZ', description: 'Request a free on-site estimate for garage, residential, patio, commercial or warehouse floor coatings in Kingman, AZ. We respond within one business day.', canonical: '/contact-us/', schema: [businessSchema(), crumbSchema(trail)] }) + header('contact') + body + footer();
+  return head({ title: 'Contact Us | Free Estimate | Epoxy Flooring Kingman AZ', description: 'Request a free on-site estimate for garage, residential, patio, commercial or warehouse floor coatings in Kingman, AZ. We respond within one business day.', canonical: '/estimate/', schema: [businessSchema(), crumbSchema(trail)] }) + header('contact') + body + footer();
 }
 
 // ---------------- PRIVACY ----------------
 export function renderPrivacy() {
-  const trail = [{ name: 'Home', url: '/' }, { name: 'Privacy Policy', url: '/privacy-policy/' }];
+  const trail = [{ name: 'Home', url: '/' }, { name: 'Privacy Policy', url: '/privacy/' }];
   const body = `<main id="main">
   <section class="section page-plain">
     <div class="wrap prose prose--narrow">
@@ -141,11 +141,11 @@ export function renderPrivacy() {
       <h2>Third-party services</h2>
       <p>This site uses Google Maps embeds and Google Fonts, which may collect usage data under Google’s own privacy policy. Form submissions are processed through our hosting provider.</p>
       <h2>Contact</h2>
-      <p>To ask about or remove your information, call ${site.phone.display} or use our <a href="/contact-us/">contact page</a>.</p>
+      <p>To ask about or remove your information, call ${site.phone.display} or use our <a href="/estimate/">contact page</a>.</p>
     </div>
   </section>
 </main>`;
-  return head({ title: 'Privacy Policy | Epoxy Flooring Kingman AZ', description: 'How Epoxy Flooring Kingman AZ collects and uses information submitted through this website.', canonical: '/privacy-policy/', schema: [] }) + header('privacy') + body + footer();
+  return head({ title: 'Privacy Policy | Epoxy Flooring Kingman AZ', description: 'How Epoxy Flooring Kingman AZ collects and uses information submitted through this website.', canonical: '/privacy/', schema: [] }) + header('privacy') + body + footer();
 }
 
 // ---------------- 404 ----------------
@@ -158,8 +158,8 @@ export function render404() {
       <p>The page you are looking for does not exist or has moved. Try one of these instead:</p>
       <ul class="notfound__links">
         <li><a href="/">Home</a></li>
-        <li><a href="/garage-floor-coatings/">Garage floor coatings</a></li>
-        <li><a href="/contact-us/">Request an estimate</a></li>
+        <li><a href="/garage-coatings/">Garage floor coatings</a></li>
+        <li><a href="/estimate/">Request an estimate</a></li>
       </ul>
     </div>
   </section>
