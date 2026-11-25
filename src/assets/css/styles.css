@@ -304,6 +304,13 @@ p { margin: 0 0 1.1em; }
 .estimate__call a { font-weight: 800; font-size: 1.2rem; color: var(--charcoal); }
 
 /* ---------- Footer ---------- */
+/* "You can also find us here" strip above the footer (homepage) */
+.findus { background: var(--ivory); border-top: 1px solid var(--line); padding: 32px 0; }
+.findus__in { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 24px; text-align: center; }
+.findus__h { font-size: clamp(1.2rem, 2vw, 1.45rem); margin: 0; }
+.findus__list { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 0; margin: 0; }
+.findus__list a { display: inline-block; padding: 9px 20px; border: 1.5px solid var(--charcoal); border-radius: 999px; color: var(--charcoal); font-weight: 700; text-decoration: none; transition: background 0.2s, color 0.2s; }
+.findus__list a:hover { background: var(--clay); border-color: var(--clay); color: #fff; }
 .site-footer { background: #f1e6d6; color: var(--ink); position: relative; padding-top: 0; }
 .strata { display: grid; height: 22px; }
 .strata i { display: block; }

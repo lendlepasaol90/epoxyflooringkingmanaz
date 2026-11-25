@@ -333,6 +333,17 @@ export function renderHome() {
       <div class="estimate__form reveal">${leadForm({ id: 'home-est', variant: 'card', heading: 'Request a free estimate', message: true })}</div>
     </div>
   </section>
+
+  <!-- 16. ALSO FIND US -->
+  <section class="findus" aria-labelledby="findus-h">
+    <div class="wrap findus__in">
+      <h2 id="findus-h" class="findus__h">You can also find us here</h2>
+      <ul class="findus__list">
+        <li><a href="https://ezlocal.com/az/kingman/concrete-contractor/0919944424" target="_blank" rel="noopener">EZlocal</a></li>
+        <li><a href="https://www.merchantcircle.com/kingman-epoxy-flooring-kingman-az" target="_blank" rel="noopener">MerchantCircle</a></li>
+      </ul>
+    </div>
+  </section>
 </main>`;
 
   return head({
